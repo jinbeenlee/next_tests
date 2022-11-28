@@ -1,0 +1,380 @@
+// 관리자 페이지용 css
+
+.loginInput {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 60px auto 0;
+}
+
+.loginInput p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginInput p label {
+  width: 18%;
+}
+
+.loginInput p input {
+  width: 200px;
+}
+
+.MobileNav {
+  width: 500px;
+  min-width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.Chart,
+.Instance {
+  width: 100%;
+  height: 300px;
+  padding: 16px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  p {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  p h5 {
+    position: relative;
+    top: 8px;
+  }
+
+  article {
+    background: #ef7469;
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+  }
+}
+
+.Instance {
+  line-height: 2;
+}
+
+.CategoriesWrap {
+  width: 80%;
+  margin: 8px auto;
+  border: 1px solid #333;
+  border-radius: 20px;
+  padding: 8px 16px;
+
+  p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p li {
+    margin-left: 8px;
+  }
+}
+
+.table-container {
+  padding: 3vh 5vw 1vh 5vw;
+  box-sizing: border-box;
+
+  tr:hover {
+    background: #fefedd;
+  }
+
+
+}
+
+//  짝수 줄에 색 넣기
+// tr:nth-child(even) {
+//   background: #fefedd;
+// }
+
+.s3-object-table {
+  width: 100%;
+}
+
+.s3-object-table thead {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.s3-object-table th {
+  z-index: 10;
+  width: 20%;
+  padding: 1vh 1vw 1vh 7vw;
+  text-align: left;
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+}
+
+.tdody a {
+  background: #000;
+}
+
+.getImg {
+  width: 100%;
+  text-align: left;
+  margin: 0 auto;
+  padding: 1vh 1vw 1vh 8vw;
+  box-sizing: border-box;
+  display: flex;
+  // flex-direction: row;
+  justify-content: space-between;
+  // align-items: center;
+}
+
+.getImg.name {
+  width: 100%;
+  // text-align: left;
+  // margin: 0 auto;
+  // padding: 1vh 1vw 1vh 8vw;
+  // box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start;
+
+
+}
+
+.mr-10 {
+  margin-right: 2px !important;
+}
+
+.getImg.bold {
+  width: 100%;
+  position: relative;
+  padding: 1vh 1vw 1vh 1vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-weight: 500;
+  font-family: nanumsq, sans-serif;
+  font-size: 16px;
+  color: #1e2021;
+}
+
+.reload {
+  position: absolute;
+  left: -80px;
+}
+
+#lightbox {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(70, 67, 67);
+  // display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#lightbox-header {
+  //background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.exit-btn {
+  margin: 0 0 0 1vw;
+}
+
+// id가 className 보다 우선순위가 위에 있어서 css가 먹힌다.
+#exit-btn button {
+  background: none;
+  font-size: 28px;
+  color: #fff;
+  border: none;
+  padding: 2rem;
+
+}
+
+#exit-btn button:hover {
+  cursor: pointer;
+}
+
+#lightbox-header .nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 950px;
+  margin: 0 auto;
+}
+
+#lightbox-header .nav .img-name {
+  // width: 400px;
+  font-weight: bold;
+  display: flex;
+}
+
+#lightbox-header .nav .move-btn {
+  width: 50px;
+}
+
+#lightbox-header .nav .img-count {
+  width: auto;
+  // align-items: center;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+}
+
+#boundingbox-toggle-btn {
+  width: 200px;
+  // align-items: center;
+  text-align: center;
+  margin: 0 1vw 0 0;
+}
+
+#label-sidebar-container {
+  width: 20%;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  // flex-direction: row;
+  background-color: rgb(211, 206, 206);
+  justify-content: center;
+  align-items: center;
+}
+
+#label-sidebar {
+  width: 95%;
+  height: 98vh;
+  margin: auto;
+  // display: inline-block;
+  background-color: rgb(255, 255, 255);
+  padding: 1vh 1vw 1vh 1vw;
+  // display: flex;
+  // flex-direction: row;
+}
+
+#label-sidebar h2 {
+  margin: 15px;
+}
+
+#label-sidebar .labeled {
+  margin: 10px 2px;
+}
+
+#label-sidebar .labeled .class {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#label-sidebar .labeled .class:hover {
+  background-color: rgb(209, 222, 227);
+}
+
+#label-sidebar .labeled .class>div {
+  margin-right: 10px;
+}
+
+#label-sidebar .labeled .class .color {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+
+#label-sidebar .labeled .class .name {
+  flex: 1;
+  word-break: break-word;
+  font-weight: bold;
+}
+
+#label-sidebar .labeled .class .count {
+  background-color: #dfe3e8;
+  padding: 0 10px;
+  border-radius: 15px;
+  font-size: 0.8em;
+}
+
+#lightbox-content {
+  width: 100%;
+  height: 100%;
+  // display: inline-block;
+  display: flex;
+  // flex-direction: row;
+  // align-items: center;
+}
+
+#lightbox-img {
+  height: 80vh;
+  max-width: 90vw;
+  object-fit: cover;
+}
+
+.image-canvas {
+  width: 80%;
+}
+
+.divider {
+  border-bottom: 1px solid #dfe3e8;
+  margin: 15px 0;
+}
+
+/* go to top btn css */
+
+
+.topBtn {
+  position: fixed;
+  opacity: 0;
+  bottom: 3.5rem;
+  right: 15rem;
+  z-index: -10;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 0 none;
+  background: #fefedd;
+  color: #39f;
+  border: 2px solid #39f;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.06em;
+  box-shadow: 1px 1px 6px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: opacity 0.3s ease-in;
+}
+
+.topBtn.active {
+  z-index: 10;
+  opacity: 1;
+}
+
+.topBtn:hover,
+.topBtn:focus,
+.topBtn:active {
+  outline: 0 none;
+}

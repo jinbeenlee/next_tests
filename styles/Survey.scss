@@ -1,0 +1,54 @@
+.SurveyWrap {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  #back {
+    position: absolute;
+    top: 32px;
+    left: 10px;
+  }
+  ul {
+    padding-top: 10px;
+    .question {
+      font-size: clamp(15px, 4vw, 17px);
+    }
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  .star-ratings {
+    margin: 10px 0;
+    p {
+      margin: 0 0 20px;
+      font-size: clamp(15px, 4vw, 17px);
+    }
+  }
+  .comments {
+    margin: 10px 0 20px;
+    p {
+      margin: 0;
+      font-size: clamp(15px, 4vw, 17px);
+    }
+  }
+  .input {
+    border-radius: 40px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    width: 95%;
+    max-width: 500px;
+    font-size: clamp(13px, 6vw, 20px);
+    font-weight: 700;
+    padding: 0.7rem 0;
+    color: #fff;
+    background-color: #6524ff;
+    border: none;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  .coffeeEvent {
+    p {
+      font-size: 18px;
+    }
+  }
+}

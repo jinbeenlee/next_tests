@@ -1,0 +1,42 @@
+.error {
+  text-align: center;
+}
+
+.airplanelogo {
+  height: 20vmin;
+  pointer-events: none;
+  margin-bottom: 50px;
+}
+
+/*@media (prefers-reduced-motion: no-preference) {
+  .airplanelogo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}*/
+.errorspan {
+  font-size: calc(5px + 2vmin);
+  margin-bottom: 20px;
+}
+.errorWrapper {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.errorLink {
+  color: #0ea5cf;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
